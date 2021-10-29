@@ -1,0 +1,62 @@
+﻿<Page x:Class="ToursApp.AddEditPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ToursApp"
+      mc:Ignorable="d" d:DesignWidth="800"
+      Title="AddEditPage" Height="454">
+
+    <Grid Background="White">
+        <TextBlock Text="Тип отеля/тура:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Margin="230,114,0,0" Width="143"></TextBlock>
+        <TextBlock Text="Курорт:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Margin="26,114,0,0" Width="70"></TextBlock>
+        <TextBlock Text="Питание:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Margin="230,188,0,0" Width="89"></TextBlock>
+        <TextBlock Text="Рейтинг отеля:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Margin="230,264,0,0" Width="113"></TextBlock>
+        <TextBlock Text="Город вылета:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Margin="10,10,0,0" Width="113"></TextBlock>
+        <TextBlock Text="Страна:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Margin="174,10,0,0" Width="112"></TextBlock>
+
+        <ComboBox Margin="230,215,427,215" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem>Только завтрак</ComboBoxItem>
+            <ComboBoxItem>Завтрак,ужин</ComboBoxItem>
+            <ComboBoxItem>Все включено</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox Margin="230,139,427,291" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem>Отель</ComboBoxItem>
+            <ComboBoxItem>Аппартаменты</ComboBoxItem>
+            <ComboBoxItem>Вилла</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox Margin="230,289,427,141" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem>3,0 и более</ComboBoxItem>
+            <ComboBoxItem>4,0 и более</ComboBoxItem>
+            <ComboBoxItem>Любой</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox Margin="10,139,602,141" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem>Любой</ComboBoxItem>
+            <ComboBoxItem>Алания</ComboBoxItem>
+            <ComboBoxItem>Анталия</ComboBoxItem>
+            <ComboBoxItem>Бодрум</ComboBoxItem>
+            <ComboBoxItem>Гагра</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox Margin="172,35,498,391" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem>Абхазия</ComboBoxItem>
+            <ComboBoxItem>Албения</ComboBoxItem>
+            <ComboBoxItem>Тунис</ComboBoxItem>
+            <ComboBoxItem>Турция</ComboBoxItem>
+            <ComboBoxItem>Хорватия</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox Margin="10,35,661,391" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem>Москва</ComboBoxItem>
+            <ComboBoxItem>Казань</ComboBoxItem>
+            <ComboBoxItem>Санкт-Петербург</ComboBoxItem>
+            <ComboBoxItem>Самара</ComboBoxItem>
+            <ComboBoxItem>Орск</ComboBoxItem>
+        </ComboBox>
+
+
+    </Grid>
+</Page>
